@@ -2,11 +2,9 @@ import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {useAuth} from '../contexts/userContext'
 export default function Home({navigation}) {
-  const {currentUser} = useAuth();
 
     return (
         <View style={styles.container}>
-        <Text>{currentUser.nom}</Text>
            <View style={styles.buttonContainer}>
            <View style={styles.buttonWrapper}>
              <Button
